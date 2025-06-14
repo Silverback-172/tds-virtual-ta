@@ -1,0 +1,41 @@
+{
+  "id": 166100,
+  "title": "Access to Notebooks",
+  "slug": "access-to-notebooks",
+  "created_at": "2025-02-02T07:04:55.785Z",
+  "last_posted_at": "2025-02-03T22:50:30.644Z",
+  "posts_count": 2,
+  "reply_count": 0,
+  "like_count": 0,
+  "views": 53,
+  "category_id": 34,
+  "url": "https://discourse.onlinedegree.iitm.ac.in/t/166100",
+  "posts": [
+    {
+      "post_number": 1,
+      "username": "vikramjncasr",
+      "created_at": "2025-02-02T07:04:55.989Z",
+      "updated_at": "2025-02-02T07:04:55.989Z",
+      "raw_content": "",
+      "cooked_content": "<p>Hi <a class=\"mention\" href=\"/u/jivraj\">@Jivraj</a> &amp; <a class=\"mention\" href=\"/u/carlton\">@carlton</a></p>\n<p>I was wondering if we can have access to the companion notebook for the application for order built on 31st Jan 2025. Where can we access this ?</p>",
+      "cleaned_text": "Hi @Jivraj & @carlton I was wondering if we can have access to the companion notebook for the application for order built on 31st Jan 2025. Where can we access this ?",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 2,
+      "username": "Jivraj",
+      "created_at": "2025-02-03T22:50:30.644Z",
+      "updated_at": "2025-02-03T22:50:30.644Z",
+      "raw_content": "",
+      "cooked_content": "<p>Hi Vikram,</p>\n<p>Those notebooks are for internal purpose only, we don’t use to share them.</p>\n<p>Kind regards</p>",
+      "cleaned_text": "Hi Vikram, Those notebooks are for internal purpose only, we don’t use to share them. Kind regards",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 2
+    }
+  ],
+  "scraped_at": "2025-06-14T13:09:50.744269",
+  "total_posts_scraped": 2
+}

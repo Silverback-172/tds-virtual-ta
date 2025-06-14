@@ -1,0 +1,41 @@
+{
+  "id": 166891,
+  "title": "Regarding Github Mail For Project",
+  "slug": "regarding-github-mail-for-project",
+  "created_at": "2025-02-13T02:19:53.023Z",
+  "last_posted_at": "2025-02-14T05:12:27.093Z",
+  "posts_count": 2,
+  "reply_count": 0,
+  "like_count": 1,
+  "views": 74,
+  "category_id": 34,
+  "url": "https://discourse.onlinedegree.iitm.ac.in/t/166891",
+  "posts": [
+    {
+      "post_number": 1,
+      "username": "23f1001236",
+      "created_at": "2025-02-13T02:19:53.249Z",
+      "updated_at": "2025-02-17T19:10:50.948Z",
+      "raw_content": "",
+      "cooked_content": "<p>Is it important to use an IITM mail ID in GitHub for the project?<br>\n<a class=\"mention\" href=\"/u/carlton\">@carlton</a></p>",
+      "cleaned_text": "Is it important to use an IITM mail ID in GitHub for the project? @carlton",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 2,
+      "username": "carlton",
+      "created_at": "2025-02-14T05:12:27.093Z",
+      "updated_at": "2025-02-14T05:12:27.093Z",
+      "raw_content": "",
+      "cooked_content": "<p>Currently we do not have any explicit policy regarding requiring IITM email as the github profile name or the github repo owner.</p>\n<p>We DO however require you to use your IITM email when submitting the project submission form.</p>\n<p>We are clarifying with operations at the moment if this arrangement satisfies their requirements. If it changes we will make a general announcement via email, portal and discourse.</p>\n<p>(we do not expect the current requirements of github to change)</p>\n<p>Kind regards</p>",
+      "cleaned_text": "Currently we do not have any explicit policy regarding requiring IITM email as the github profile name or the github repo owner. We DO however require you to use your IITM email when submitting the project submission form. We are clarifying with operations at the moment if this arrangement satisfies their requirements. If it changes we will make a general announcement via email, portal and discourse. (we do not expect the current requirements of github to change) Kind regards",
+      "reply_count": 0,
+      "like_count": 1,
+      "trust_level": 3
+    }
+  ],
+  "scraped_at": "2025-06-14T13:09:16.573806",
+  "total_posts_scraped": 2
+}

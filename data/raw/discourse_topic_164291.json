@@ -1,0 +1,53 @@
+{
+  "id": 164291,
+  "title": "Regarding droping from TDS",
+  "slug": "regarding-droping-from-tds",
+  "created_at": "2025-01-19T11:01:19.843Z",
+  "last_posted_at": "2025-01-20T17:57:51.091Z",
+  "posts_count": 3,
+  "reply_count": 1,
+  "like_count": 0,
+  "views": 98,
+  "category_id": 34,
+  "url": "https://discourse.onlinedegree.iitm.ac.in/t/164291",
+  "posts": [
+    {
+      "post_number": 1,
+      "username": "23f2004752",
+      "created_at": "2025-01-19T11:01:20.096Z",
+      "updated_at": "2025-01-19T11:01:20.096Z",
+      "raw_content": "",
+      "cooked_content": "<p>I want to drop to drop this course for this term ,then also i need to submit the graded assignment or project (i will try my best to submit assignment).</p>",
+      "cleaned_text": "I want to drop to drop this course for this term ,then also i need to submit the graded assignment or project (i will try my best to submit assignment).",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 2,
+      "username": "Divya1",
+      "created_at": "2025-01-20T16:40:14.522Z",
+      "updated_at": "2025-01-20T16:40:14.522Z",
+      "raw_content": "",
+      "cooked_content": "<p>where can we find the    drop courses form ?</p>",
+      "cleaned_text": "where can we find the drop courses form ?",
+      "reply_count": 1,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 3,
+      "username": "23f2004752",
+      "created_at": "2025-01-20T17:57:51.091Z",
+      "updated_at": "2025-01-20T17:57:51.091Z",
+      "raw_content": "",
+      "cooked_content": "<p>it is not released yet, when release it will be displayed on dashboard.</p>",
+      "cleaned_text": "it is not released yet, when release it will be displayed on dashboard.",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 1
+    }
+  ],
+  "scraped_at": "2025-06-14T13:10:20.382439",
+  "total_posts_scraped": 3
+}

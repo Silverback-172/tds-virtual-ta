@@ -1,0 +1,41 @@
+{
+  "id": 168482,
+  "title": "TDS Module 6",
+  "slug": "tds-module-6",
+  "created_at": "2025-02-25T17:57:30.579Z",
+  "last_posted_at": "2025-02-26T02:35:12.373Z",
+  "posts_count": 2,
+  "reply_count": 0,
+  "like_count": 0,
+  "views": 89,
+  "category_id": 34,
+  "url": "https://discourse.onlinedegree.iitm.ac.in/t/168482",
+  "posts": [
+    {
+      "post_number": 1,
+      "username": "24ds1000012",
+      "created_at": "2025-02-25T17:57:30.751Z",
+      "updated_at": "2025-02-26T14:10:27.844Z",
+      "raw_content": "",
+      "cooked_content": "<p>I am not able to see Module 6 or Module 7 in my TDS curriculum. Please let me know whether it is released already.</p>",
+      "cleaned_text": "I am not able to see Module 6 or Module 7 in my TDS curriculum. Please let me know whether it is released already.",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 0
+    },
+    {
+      "post_number": 2,
+      "username": "carlton",
+      "created_at": "2025-02-26T02:35:12.373Z",
+      "updated_at": "2025-02-26T07:51:24.585Z",
+      "raw_content": "",
+      "cooked_content": "<p><a class=\"mention\" href=\"/u/24ds1000012\">@24ds1000012</a> Both Module 6 and Module 7 have been available from the start of the course. All modules were released before the 10th of Jan on the TDS course site.</p>\n<p><a href=\"https://tds.s-anand.net/#/\" class=\"onebox\" target=\"_blank\" rel=\"noopener\">https://tds.s-anand.net/#/</a></p>\n<p>Module 6:</p>\n<p><a href=\"https://tds.s-anand.net/#/data-analysis\" class=\"onebox\" target=\"_blank\" rel=\"noopener\">https://tds.s-anand.net/#/data-analysis</a></p>\n<p>Module 7:</p>\n<p><a href=\"https://tds.s-anand.net/#/data-visualization\" class=\"onebox\" target=\"_blank\" rel=\"noopener\">https://tds.s-anand.net/#/data-visualization</a></p>\n<p>GA 6 will become available sometime this week.</p>\n<p><s>We do not currently have an ETA on GA 7 and Project 2.</s></p>\n<p>Please refer to pinned post at the top of TDS page for new dates.</p>\n<p>Kind regards</p>",
+      "cleaned_text": "@24ds1000012 Both Module 6 and Module 7 have been available from the start of the course. All modules were released before the 10th of Jan on the TDS course site. https://tds.s-anand.net/#/ Module 6: https://tds.s-anand.net/#/data-analysis Module 7: https://tds.s-anand.net/#/data-visualization GA 6 will become available sometime this week. We do not currently have an ETA on GA 7 and Project 2. Please refer to pinned post at the top of TDS page for new dates. Kind regards",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 3
+    }
+  ],
+  "scraped_at": "2025-06-14T13:08:26.197617",
+  "total_posts_scraped": 2
+}

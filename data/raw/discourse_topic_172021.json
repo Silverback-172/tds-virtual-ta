@@ -1,0 +1,41 @@
+{
+  "id": 172021,
+  "title": "EMAIL IN ga-7",
+  "slug": "email-in-ga-7",
+  "created_at": "2025-04-07T08:50:43.142Z",
+  "last_posted_at": "2025-04-07T10:13:37.054Z",
+  "posts_count": 2,
+  "reply_count": 0,
+  "like_count": 0,
+  "views": 85,
+  "category_id": 34,
+  "url": "https://discourse.onlinedegree.iitm.ac.in/t/172021",
+  "posts": [
+    {
+      "post_number": 1,
+      "username": "24f1001616",
+      "created_at": "2025-04-07T08:50:43.355Z",
+      "updated_at": "2025-04-07T08:50:43.355Z",
+      "raw_content": "",
+      "cooked_content": "<p><a class=\"mention\" href=\"/u/carlton\">@carlton</a> sir in google form it is written to submit email address of peer but the mail TDS team has sent has 3 drive links .so we have to submit drive links or like create the email by adding “<span class=\"mention\">@ds.study.iitm.ac.in</span>” after the username</p>",
+      "cleaned_text": "@carlton sir in google form it is written to submit email address of peer but the mail TDS team has sent has 3 drive links .so we have to submit drive links or like create the email by adding “@ds.study.iitm.ac.in” after the username",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 2,
+      "username": "carlton",
+      "created_at": "2025-04-07T10:13:37.054Z",
+      "updated_at": "2025-04-07T10:13:37.054Z",
+      "raw_content": "",
+      "cooked_content": "<p>If you actually open the drive link you will see the student email. You have to use that email for submitting the form.</p>",
+      "cleaned_text": "If you actually open the drive link you will see the student email. You have to use that email for submitting the form.",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 3
+    }
+  ],
+  "scraped_at": "2025-06-14T12:58:46.891086",
+  "total_posts_scraped": 2
+}

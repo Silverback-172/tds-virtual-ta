@@ -1,0 +1,41 @@
+{
+  "id": 163144,
+  "title": "Way of conduction of exam",
+  "slug": "way-of-conduction-of-exam",
+  "created_at": "2025-01-13T15:35:53.154Z",
+  "last_posted_at": "2025-01-13T15:48:49.846Z",
+  "posts_count": 2,
+  "reply_count": 0,
+  "like_count": 1,
+  "views": 70,
+  "category_id": 34,
+  "url": "https://discourse.onlinedegree.iitm.ac.in/t/163144",
+  "posts": [
+    {
+      "post_number": 1,
+      "username": "Divya1",
+      "created_at": "2025-01-13T15:35:53.326Z",
+      "updated_at": "2025-01-13T15:35:53.326Z",
+      "raw_content": "",
+      "cooked_content": "<p>My doubt is that “Will there be any coding level questions in the ROE and the weekly graded assignments?”</p>",
+      "cleaned_text": "My doubt is that “Will there be any coding level questions in the ROE and the weekly graded assignments?”",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 2,
+      "username": "ADI_1792",
+      "created_at": "2025-01-13T15:48:49.846Z",
+      "updated_at": "2025-01-13T15:48:49.846Z",
+      "raw_content": "",
+      "cooked_content": "<p>In ROE , usually you have to find the answers of the questions by solving them using codes and tools explained in the course .</p>\n<p>For example you have a large pdf file of some patients and their disease and you are said to find number patients having some XYZ disease in that pdf . Now you can get this answer by using parsing tools and few lines of codes and after getting the results you can write that answer back in the portal .</p>\n<p>Same goes for assignments , they will be more like minor project works.</p>",
+      "cleaned_text": "In ROE , usually you have to find the answers of the questions by solving them using codes and tools explained in the course . For example you have a large pdf file of some patients and their disease and you are said to find number patients having some XYZ disease in that pdf . Now you can get this answer by using parsing tools and few lines of codes and after getting the results you can write that answer back in the portal . Same goes for assignments , they will be more like minor project works.",
+      "reply_count": 0,
+      "like_count": 1,
+      "trust_level": 1
+    }
+  ],
+  "scraped_at": "2025-06-14T13:10:44.568374",
+  "total_posts_scraped": 2
+}

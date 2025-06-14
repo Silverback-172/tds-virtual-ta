@@ -1,0 +1,41 @@
+{
+  "id": 166647,
+  "title": "I have doubt in Q10",
+  "slug": "i-have-doubt-in-q10",
+  "created_at": "2025-02-09T14:51:52.337Z",
+  "last_posted_at": "2025-02-09T18:15:12.582Z",
+  "posts_count": 2,
+  "reply_count": 0,
+  "like_count": 0,
+  "views": 41,
+  "category_id": 34,
+  "url": "https://discourse.onlinedegree.iitm.ac.in/t/166647",
+  "posts": [
+    {
+      "post_number": 1,
+      "username": "23f1001806",
+      "created_at": "2025-02-09T14:51:52.566Z",
+      "updated_at": "2025-02-09T14:51:52.566Z",
+      "raw_content": "",
+      "cooked_content": "<p>I have doubt in question 10 to convert pdf to markdown<br>\nI am not getting correct markdown<br>\n<a class=\"mention\" href=\"/u/pds_staff\">@pds_staff</a></p>",
+      "cleaned_text": "I have doubt in question 10 to convert pdf to markdown I am not getting correct markdown @pds_staff",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 0
+    },
+    {
+      "post_number": 2,
+      "username": "22f3000092",
+      "created_at": "2025-02-09T18:15:12.582Z",
+      "updated_at": "2025-02-09T18:15:12.582Z",
+      "raw_content": "",
+      "cooked_content": "<p>Try using the pymupdf4llm Library<br>\npip install pymupdf4llm</p>\n<p>import pymupdf4llm<br>\nmd_text = pymupdf4llm.to_markdown(“input.pdf”)</p>\n<p>import pathlib<br>\npathlib.Path(“output.md”).write_bytes(md_text.encode())</p>\n<p>import pymupdf4llm<br>\nllama_reader = pymupdf4llm.LlamaMarkdownReader()<br>\nllama_docs = llama_reader.load_data(“input.pdf”)</p>",
+      "cleaned_text": "Try using the pymupdf4llm Library pip install pymupdf4llm import pymupdf4llm md_text = pymupdf4llm.to_markdown(“input.pdf”) import pathlib pathlib.Path(“output.md”).write_bytes(md_text.encode()) import pymupdf4llm llama_reader = pymupdf4llm.LlamaMarkdownReader() llama_docs = llama_reader.load_data(“input.pdf”)",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 0
+    }
+  ],
+  "scraped_at": "2025-06-14T13:09:26.221667",
+  "total_posts_scraped": 2
+}
