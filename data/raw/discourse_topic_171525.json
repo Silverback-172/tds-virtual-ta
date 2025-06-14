@@ -1,0 +1,65 @@
+{
+  "id": 171525,
+  "title": "Clarification on API Endpoint Correction in Submission",
+  "slug": "clarification-on-api-endpoint-correction-in-submission",
+  "created_at": "2025-04-01T15:09:37.885Z",
+  "last_posted_at": "2025-04-03T14:38:39.579Z",
+  "posts_count": 4,
+  "reply_count": 1,
+  "like_count": 7,
+  "views": 93,
+  "category_id": 34,
+  "url": "https://discourse.onlinedegree.iitm.ac.in/t/171525",
+  "posts": [
+    {
+      "post_number": 1,
+      "username": "23f2005702",
+      "created_at": "2025-04-01T15:09:38.084Z",
+      "updated_at": "2025-04-01T15:09:38.084Z",
+      "raw_content": "",
+      "cooked_content": "<p><a class=\"mention\" href=\"/u/s.anand\">@s.anand</a> <a class=\"mention\" href=\"/u/carlton\">@carlton</a> <a class=\"mention\" href=\"/u/saransh_saini\">@Saransh_Saini</a> <a class=\"mention\" href=\"/u/jivraj\">@Jivraj</a><br>\nI submitted the form before the deadline with the API endpoint as /api, but I later realized the correct format was /api/ (with a trailing slash). To fix this, I edited the Google Form today.</p>\n<p>Will this cause any issues with the submission? Please let me know if any further action is needed.</p>",
+      "cleaned_text": "@s.anand @carlton @Saransh_Saini @Jivraj I submitted the form before the deadline with the API endpoint as /api, but I later realized the correct format was /api/ (with a trailing slash). To fix this, I edited the Google Form today. Will this cause any issues with the submission? Please let me know if any further action is needed.",
+      "reply_count": 0,
+      "like_count": 2,
+      "trust_level": 1
+    },
+    {
+      "post_number": 2,
+      "username": "21f2000709",
+      "created_at": "2025-04-02T11:52:04.861Z",
+      "updated_at": "2025-04-02T11:53:28.602Z",
+      "raw_content": "",
+      "cooked_content": "<p>It is not like that, it can be any endpoint, but whatever you submit should work. Like many frameworks treat /api/ and /api differently.</p>\n<p>The project 2 docs assumes that the endpoint is /api/ and provides the code accordingly.</p>",
+      "cleaned_text": "It is not like that, it can be any endpoint, but whatever you submit should work. Like many frameworks treat /api/ and /api differently. The project 2 docs assumes that the endpoint is /api/ and provides the code accordingly.",
+      "reply_count": 1,
+      "like_count": 1,
+      "trust_level": 1
+    },
+    {
+      "post_number": 3,
+      "username": "23f2005702",
+      "created_at": "2025-04-02T12:04:08.373Z",
+      "updated_at": "2025-04-02T12:04:08.373Z",
+      "raw_content": "",
+      "cooked_content": "<p>you are right but if I use postman with /api end point it wont work but with /api/ it will work so..</p>",
+      "cleaned_text": "you are right but if I use postman with /api end point it wont work but with /api/ it will work so..",
+      "reply_count": 0,
+      "like_count": 2,
+      "trust_level": 1
+    },
+    {
+      "post_number": 4,
+      "username": "23f2005702",
+      "created_at": "2025-04-03T14:38:39.579Z",
+      "updated_at": "2025-04-03T14:42:25.613Z",
+      "raw_content": "",
+      "cooked_content": "<p><a class=\"mention\" href=\"/u/saransh_saini\">@Saransh_Saini</a><br>\nHere is the tag</p>\n<p>And roll number  of people in collaboration with our project</p>\n<p>21f3001076@ds.study.iitm.ac.in</p>\n<p>23f2005702@ds.study.iitm.ac.in</p>\n<p>23f2004637@ds.study.iitm.ac.in</p>\n<p>23f2005702@ds.study.iitm.ac.in</p>",
+      "cleaned_text": "@Saransh_Saini Here is the tag And roll number of people in collaboration with our project 21f3001076@ds.study.iitm.ac.in 23f2005702@ds.study.iitm.ac.in 23f2004637@ds.study.iitm.ac.in 23f2005702@ds.study.iitm.ac.in",
+      "reply_count": 0,
+      "like_count": 2,
+      "trust_level": 1
+    }
+  ],
+  "scraped_at": "2025-06-14T12:59:14.728754",
+  "total_posts_scraped": 4
+}

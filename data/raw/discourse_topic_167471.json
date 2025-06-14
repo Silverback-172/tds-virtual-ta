@@ -1,0 +1,101 @@
+{
+  "id": 167471,
+  "title": "Project 1 Submission Marked as FAIL Despite Having Dockerfile & Image",
+  "slug": "project-1-submission-marked-as-fail-despite-having-dockerfile-image",
+  "created_at": "2025-02-17T10:07:56.585Z",
+  "last_posted_at": "2025-02-18T08:28:16.577Z",
+  "posts_count": 7,
+  "reply_count": 6,
+  "like_count": 0,
+  "views": 109,
+  "category_id": 34,
+  "url": "https://discourse.onlinedegree.iitm.ac.in/t/167471",
+  "posts": [
+    {
+      "post_number": 1,
+      "username": "21f3002647",
+      "created_at": "2025-02-17T10:07:56.783Z",
+      "updated_at": "2025-02-17T19:02:19.971Z",
+      "raw_content": "",
+      "cooked_content": "<p>Dear TDS Team,</p>\n<p>I have verified my submission, and my repository <strong>does include a Dockerfile</strong>, and the <strong>Docker image is accessible on DockerHub</strong>. Please find the attached screenshot as proof. Kindly review my submission again and let me know if any further action is needed.</p>\n<p>Looking forward to your confirmation.</p>\n<p>Best regards,<br>\nArnav Mehta<br>\n(21f3002647)</p>\n<p><div class=\"lightbox-wrapper\"><a class=\"lightbox\" href=\"https://europe1.discourse-cdn.com/flex013/uploads/iitm/original/3X/6/a/6a4a28aa638840e8d2e4dbf246ca235fd41e5ccb.png\" data-download-href=\"/uploads/short-url/fahuMqTlIDS9GwNGNM399QrBKhJ.png?dl=1\" title=\"image\" rel=\"noopener nofollow ugc\"><img src=\"https://europe1.discourse-cdn.com/flex013/uploads/iitm/original/3X/6/a/6a4a28aa638840e8d2e4dbf246ca235fd41e5ccb.png\" alt=\"image\" data-base62-sha1=\"fahuMqTlIDS9GwNGNM399QrBKhJ\" width=\"234\" height=\"500\" data-dominant-color=\"161A21\"><div class=\"meta\"><svg class=\"fa d-icon d-icon-far-image svg-icon\" aria-hidden=\"true\"><use href=\"#far-image\"></use></svg><span class=\"filename\">image</span><span class=\"informations\">250×534 3.92 KB</span><svg class=\"fa d-icon d-icon-discourse-expand svg-icon\" aria-hidden=\"true\"><use href=\"#discourse-expand\"></use></svg></div></a></div><br>\n<div class=\"lightbox-wrapper\"><a class=\"lightbox\" href=\"https://europe1.discourse-cdn.com/flex013/uploads/iitm/original/3X/d/1/d14c53cce65e7ac7f679de75bba301f3ee23f1f0.png\" data-download-href=\"/uploads/short-url/tRxjXpqC5mBAEB7FLLzaX0j5ccg.png?dl=1\" title=\"image\" rel=\"noopener nofollow ugc\"><img src=\"https://europe1.discourse-cdn.com/flex013/uploads/iitm/original/3X/d/1/d14c53cce65e7ac7f679de75bba301f3ee23f1f0.png\" alt=\"image\" data-base62-sha1=\"tRxjXpqC5mBAEB7FLLzaX0j5ccg\" width=\"690\" height=\"230\" data-dominant-color=\"1D242C\"><div class=\"meta\"><svg class=\"fa d-icon d-icon-far-image svg-icon\" aria-hidden=\"true\"><use href=\"#far-image\"></use></svg><span class=\"filename\">image</span><span class=\"informations\">713×238 11 KB</span><svg class=\"fa d-icon d-icon-discourse-expand svg-icon\" aria-hidden=\"true\"><use href=\"#discourse-expand\"></use></svg></div></a></div></p>",
+      "cleaned_text": "Dear TDS Team, I have verified my submission, and my repository does include a Dockerfile, and the Docker image is accessible on DockerHub. Please find the attached screenshot as proof. Kindly review my submission again and let me know if any further action is needed. Looking forward to your confirmation. Best regards, Arnav Mehta (21f3002647) image250×534 3.92 KB image713×238 11 KB",
+      "reply_count": 1,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 2,
+      "username": "21f3002647",
+      "created_at": "2025-02-17T12:30:15.244Z",
+      "updated_at": "2025-02-17T12:30:15.244Z",
+      "raw_content": "",
+      "cooked_content": "<p><a class=\"mention\" href=\"/u/saransh_saini\">@Saransh_Saini</a> sir what should i do?</p>",
+      "cleaned_text": "@Saransh_Saini sir what should i do?",
+      "reply_count": 1,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 3,
+      "username": "Saransh_Saini",
+      "created_at": "2025-02-17T15:43:39.614Z",
+      "updated_at": "2025-02-17T15:43:39.614Z",
+      "raw_content": "",
+      "cooked_content": "<p><a class=\"mention\" href=\"/u/carlton\">@carlton</a> Kindly have a look into this.</p>",
+      "cleaned_text": "@carlton Kindly have a look into this.",
+      "reply_count": 1,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 8,
+      "username": "satviksawhney",
+      "created_at": "2025-02-18T00:48:03.881Z",
+      "updated_at": "2025-02-18T00:48:03.881Z",
+      "raw_content": "",
+      "cooked_content": "<p>Good Morning Sir,<br>\nSir even I am facing a similar issue, even though sanity check for docker image on docker hub was cleared but got a mail saying ‘dockerfile’ not present in the GitHub repo while it clearly was. Sir please look into it we have given so many days to complete this project.</p>\n<p>Looking forward to your reply.</p>\n<p>Thank you<br>\nSatvik Sawhney<br>\n23f2003680</p>",
+      "cleaned_text": "Good Morning Sir, Sir even I am facing a similar issue, even though sanity check for docker image on docker hub was cleared but got a mail saying ‘dockerfile’ not present in the GitHub repo while it clearly was. Sir please look into it we have given so many days to complete this project. Looking forward to your reply. Thank you Satvik Sawhney 23f2003680",
+      "reply_count": 1,
+      "like_count": 0,
+      "trust_level": 0
+    },
+    {
+      "post_number": 9,
+      "username": "carlton",
+      "created_at": "2025-02-18T05:00:31.191Z",
+      "updated_at": "2025-02-18T05:00:31.191Z",
+      "raw_content": "",
+      "cooked_content": "<p>So the reason for the failure is:</p>\n<p>You had initially put your Dockerfile inside a directory called TDSP-1-main instead of being directly in your repo. (On 15th Feb 1:26AM)</p>\n<p>Then when our automated script checked if students repos met the requirements and yours did not we immediately sent out a warning email as a opportunity for students to make the necessary corrections.</p>\n<p>Then once you realised your mistake, on <strong>Feb 17th at 9:11 pm IST</strong> i.e <em>yesteday</em>, you changed your repo to put the files in the correct locations.</p>\n<p>Then you finally posted here on Discourse with the image [quote=“21f3002647, post:1, topic:167471”]<br>\n<div class=\"lightbox-wrapper\"><a class=\"lightbox\" href=\"https://europe1.discourse-cdn.com/flex013/uploads/iitm/original/3X/6/a/6a4a28aa638840e8d2e4dbf246ca235fd41e5ccb.png\" data-download-href=\"/uploads/short-url/fahuMqTlIDS9GwNGNM399QrBKhJ.png?dl=1\" title=\"image\"><img src=\"https://europe1.discourse-cdn.com/flex013/uploads/iitm/original/3X/6/a/6a4a28aa638840e8d2e4dbf246ca235fd41e5ccb.png\" alt=\"image\" data-base62-sha1=\"fahuMqTlIDS9GwNGNM399QrBKhJ\" width=\"234\" height=\"500\" data-dominant-color=\"161A21\"><div class=\"meta\"><svg class=\"fa d-icon d-icon-far-image svg-icon\" aria-hidden=\"true\"><use href=\"#far-image\"></use></svg><span class=\"filename\">image</span><span class=\"informations\">250×534 3.92 KB</span><svg class=\"fa d-icon d-icon-discourse-expand svg-icon\" aria-hidden=\"true\"><use href=\"#discourse-expand\"></use></svg></div></a></div><br>\n[/quote]</p>\n<p>showing that your files are in the correct place.</p>\n<p>We do not take into consideration modifications to your repo after the deadline because then we would have to extend that curtesy to all students.</p>\n<p>Kind regards</p>",
+      "cleaned_text": "So the reason for the failure is: You had initially put your Dockerfile inside a directory called TDSP-1-main instead of being directly in your repo. (On 15th Feb 1:26AM) Then when our automated script checked if students repos met the requirements and yours did not we immediately sent out a warning email as a opportunity for students to make the necessary corrections. Then once you realised your mistake, on Feb 17th at 9:11 pm IST i.e yesteday, you changed your repo to put the files in the correct locations. Then you finally posted here on Discourse with the image [quote=“21f3002647, post:1, topic:167471”] image250×534 3.92 KB [/quote] showing that your files are in the correct place. We do not take into consideration modifications to your repo after the deadline because then we would have to extend that curtesy to all students. Kind regards",
+      "reply_count": 2,
+      "like_count": 0,
+      "trust_level": 3
+    },
+    {
+      "post_number": 10,
+      "username": "21f3002647",
+      "created_at": "2025-02-18T06:35:49.560Z",
+      "updated_at": "2025-02-18T06:36:27.698Z",
+      "raw_content": "",
+      "cooked_content": "<p><a class=\"mention\" href=\"/u/carlton\">@carlton</a> sir<br>\nYes, I corrected my repo at 9:11 PM IST, but I had actually written and submitted my query much earlier at 4 PM. At that time, I wasn’t entirely sure if this was the actual issue, but it looks like it was.</p>\n<p>I understand that the deadline had already passed, and I only saw the email later. I had two GATE papers on the 15th and an interview on the 16th, so I was extremely busy and couldn’t check my emails sooner. However, I had raised my concern well before making the correction, so I’d really appreciate it if my submission could still be considered <img src=\"https://emoji.discourse-cdn.com/google/frowning.png?v=12\" title=\":frowning:\" class=\"emoji\" alt=\":frowning:\" loading=\"lazy\" width=\"20\" height=\"20\"></p>\n<p>Kind regards,<br>\nArnav Mehta<br>\n21f3002647</p>",
+      "cleaned_text": "@carlton sir Yes, I corrected my repo at 9:11 PM IST, but I had actually written and submitted my query much earlier at 4 PM. At that time, I wasn’t entirely sure if this was the actual issue, but it looks like it was. I understand that the deadline had already passed, and I only saw the email later. I had two GATE papers on the 15th and an interview on the 16th, so I was extremely busy and couldn’t check my emails sooner. However, I had raised my concern well before making the correction, so I’d really appreciate it if my submission could still be considered Kind regards, Arnav Mehta 21f3002647",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 11,
+      "username": "satviksawhney",
+      "created_at": "2025-02-18T08:28:16.577Z",
+      "updated_at": "2025-02-18T08:28:16.577Z",
+      "raw_content": "",
+      "cooked_content": "<p>Sir, please consider it we have spent a lot of time, in my case just the d in Dockerfile was small that too on remote repository. On my local repository it was Dockerfile only I even have a published docker image as verified by you autated script only. The name of the file on remote repository did not change even after commit it through my local repo, once I read the mail in morning it was only then I realised it wasn’t changed on GitHub repo.</p>\n<p>Sir I understand the deadline has passed and I am not asking for a resubmission, I am just asking to consider the already submitted work, just that. It would be really helpful. I just have one commit on my repo that too “Rename dockerfile to Dokerfile” . Sir please attest consider what we have already submitted. I have made no changes as you can verify it too.</p>\n<p>Sir it is a humble request to please consider it.</p>\n<p>Warm Regards,<br>\nSatvik Sawhney<br>\n23f2003680</p>\n<p><div class=\"lightbox-wrapper\"><a class=\"lightbox\" href=\"https://europe1.discourse-cdn.com/flex013/uploads/iitm/original/3X/1/a/1a5f2ea044383efcb5d248ddb487665e9e65957d.png\" data-download-href=\"/uploads/short-url/3Lil8Qu84E3T6jREDGJRO6bakiN.png?dl=1\" title=\"Screenshot 2025-02-18 at 1.53.10 PM\" rel=\"noopener nofollow ugc\"><img src=\"https://europe1.discourse-cdn.com/flex013/uploads/iitm/optimized/3X/1/a/1a5f2ea044383efcb5d248ddb487665e9e65957d_2_690x170.png\" alt=\"Screenshot 2025-02-18 at 1.53.10 PM\" data-base62-sha1=\"3Lil8Qu84E3T6jREDGJRO6bakiN\" width=\"690\" height=\"170\" srcset=\"https://europe1.discourse-cdn.com/flex013/uploads/iitm/optimized/3X/1/a/1a5f2ea044383efcb5d248ddb487665e9e65957d_2_690x170.png, https://europe1.discourse-cdn.com/flex013/uploads/iitm/optimized/3X/1/a/1a5f2ea044383efcb5d248ddb487665e9e65957d_2_1035x255.png 1.5x, https://europe1.discourse-cdn.com/flex013/uploads/iitm/optimized/3X/1/a/1a5f2ea044383efcb5d248ddb487665e9e65957d_2_1380x340.png 2x\" data-dominant-color=\"15181D\"><div class=\"meta\"><svg class=\"fa d-icon d-icon-far-image svg-icon\" aria-hidden=\"true\"><use href=\"#far-image\"></use></svg><span class=\"filename\">Screenshot 2025-02-18 at 1.53.10 PM</span><span class=\"informations\">1889×467 54 KB</span><svg class=\"fa d-icon d-icon-discourse-expand svg-icon\" aria-hidden=\"true\"><use href=\"#discourse-expand\"></use></svg></div></a></div></p>",
+      "cleaned_text": "Sir, please consider it we have spent a lot of time, in my case just the d in Dockerfile was small that too on remote repository. On my local repository it was Dockerfile only I even have a published docker image as verified by you autated script only. The name of the file on remote repository did not change even after commit it through my local repo, once I read the mail in morning it was only then I realised it wasn’t changed on GitHub repo. Sir I understand the deadline has passed and I am not asking for a resubmission, I am just asking to consider the already submitted work, just that. It would be really helpful. I just have one commit on my repo that too “Rename dockerfile to Dokerfile” . Sir please attest consider what we have already submitted. I have made no changes as you can verify it too. Sir it is a humble request to please consider it. Warm Regards, Satvik Sawhney 23f2003680 Screenshot 2025-02-18 at 1.53.10 PM1889×467 54 KB",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 0
+    }
+  ],
+  "scraped_at": "2025-06-14T13:09:01.465121",
+  "total_posts_scraped": 7
+}

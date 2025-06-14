@@ -1,0 +1,113 @@
+{
+  "id": 166634,
+  "title": "Doubt in GA4 Q7",
+  "slug": "doubt-in-ga4-q7",
+  "created_at": "2025-02-09T12:11:34.824Z",
+  "last_posted_at": "2025-02-09T18:12:58.595Z",
+  "posts_count": 8,
+  "reply_count": 4,
+  "like_count": 1,
+  "views": 46,
+  "category_id": 34,
+  "url": "https://discourse.onlinedegree.iitm.ac.in/t/166634",
+  "posts": [
+    {
+      "post_number": 1,
+      "username": "Sakshi6479",
+      "created_at": "2025-02-09T12:11:34.989Z",
+      "updated_at": "2025-02-09T12:11:34.989Z",
+      "raw_content": "",
+      "cooked_content": "<p>Sir,<br>\nI am not able to understand how to solve Q7 in GA4. kindly guide me how to solve this question or provide some tutorial video to complete it.<br>\nAs the deadline is of today please provide the tutorial video for this question soon.<br>\n<a class=\"mention\" href=\"/u/saransh_saini\">@Saransh_Saini</a> , <a class=\"mention\" href=\"/u/jivraj\">@Jivraj</a> , <a class=\"mention\" href=\"/u/carlton\">@carlton</a></p>",
+      "cleaned_text": "Sir, I am not able to understand how to solve Q7 in GA4. kindly guide me how to solve this question or provide some tutorial video to complete it. As the deadline is of today please provide the tutorial video for this question soon. @Saransh_Saini , @Jivraj , @carlton",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 2,
+      "username": "21f3000745",
+      "created_at": "2025-02-09T15:17:40.710Z",
+      "updated_at": "2025-02-09T15:17:40.710Z",
+      "raw_content": "",
+      "cooked_content": "<p>Just create the url with query parameters city and followers.</p>",
+      "cleaned_text": "Just create the url with query parameters city and followers.",
+      "reply_count": 1,
+      "like_count": 1,
+      "trust_level": 1
+    },
+    {
+      "post_number": 3,
+      "username": "Sakshi6479",
+      "created_at": "2025-02-09T16:30:09.582Z",
+      "updated_at": "2025-02-09T16:30:09.582Z",
+      "raw_content": "",
+      "cooked_content": "<p>Can you please elaborate a little bit what should be the steps ?</p>",
+      "cleaned_text": "Can you please elaborate a little bit what should be the steps ?",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 4,
+      "username": "23f1001301",
+      "created_at": "2025-02-09T16:40:15.128Z",
+      "updated_at": "2025-02-09T16:40:15.128Z",
+      "raw_content": "",
+      "cooked_content": "<p>Connect to the GitHub API-  it lets you fetch user data automatically(go to github developer settings -&gt;personal acceess tokens-&gt;tokens(classic)<br>\nSearch for Users with criteria mentioned in your question<br>\nWe organize the list from newest to oldest, making it easy to spot the freshest account.</p>",
+      "cleaned_text": "Connect to the GitHub API- it lets you fetch user data automatically(go to github developer settings ->personal acceess tokens->tokens(classic) Search for Users with criteria mentioned in your question We organize the list from newest to oldest, making it easy to spot the freshest account.",
+      "reply_count": 1,
+      "like_count": 0,
+      "trust_level": 0
+    },
+    {
+      "post_number": 5,
+      "username": "Sakshi6479",
+      "created_at": "2025-02-09T16:45:10.685Z",
+      "updated_at": "2025-02-09T16:45:10.685Z",
+      "raw_content": "",
+      "cooked_content": "<p>Ok thank you for the help.</p>",
+      "cleaned_text": "Ok thank you for the help.",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 6,
+      "username": "Saransh_Saini",
+      "created_at": "2025-02-09T16:54:46.677Z",
+      "updated_at": "2025-02-09T16:54:46.677Z",
+      "raw_content": "",
+      "cooked_content": "<p>Hi Sakshi,<br>\nIt seems you have already got your answers. Kindly mark the solution these two people have given, so that anyone facing the same issue would be able to get to it easily.</p>",
+      "cleaned_text": "Hi Sakshi, It seems you have already got your answers. Kindly mark the solution these two people have given, so that anyone facing the same issue would be able to get to it easily.",
+      "reply_count": 1,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 7,
+      "username": "Sakshi6479",
+      "created_at": "2025-02-09T18:11:45.716Z",
+      "updated_at": "2025-02-09T18:11:45.716Z",
+      "raw_content": "",
+      "cooked_content": "<p>Sir I am having trouble in q8 also whenever I am pushing commit in git hub it was showing in GitHub repository but it is not working in git hub actions.<br>\n<div class=\"lightbox-wrapper\"><a class=\"lightbox\" href=\"https://europe1.discourse-cdn.com/flex013/uploads/iitm/original/3X/9/2/92ea4dcea08bee572e3014e2643e84c2d1ad1265.jpeg\" data-download-href=\"/uploads/short-url/kXFHGhOEC2NV5cjQ3lOpM78i47j.jpeg?dl=1\" title=\"17391246723344959529301152516720\" rel=\"noopener nofollow ugc\"><img src=\"https://europe1.discourse-cdn.com/flex013/uploads/iitm/optimized/3X/9/2/92ea4dcea08bee572e3014e2643e84c2d1ad1265_2_666x500.jpeg\" alt=\"17391246723344959529301152516720\" data-base62-sha1=\"kXFHGhOEC2NV5cjQ3lOpM78i47j\" width=\"666\" height=\"500\" srcset=\"https://europe1.discourse-cdn.com/flex013/uploads/iitm/optimized/3X/9/2/92ea4dcea08bee572e3014e2643e84c2d1ad1265_2_666x500.jpeg, https://europe1.discourse-cdn.com/flex013/uploads/iitm/optimized/3X/9/2/92ea4dcea08bee572e3014e2643e84c2d1ad1265_2_999x750.jpeg 1.5x, https://europe1.discourse-cdn.com/flex013/uploads/iitm/optimized/3X/9/2/92ea4dcea08bee572e3014e2643e84c2d1ad1265_2_1332x1000.jpeg 2x\" data-dominant-color=\"646361\"><div class=\"meta\"><svg class=\"fa d-icon d-icon-far-image svg-icon\" aria-hidden=\"true\"><use href=\"#far-image\"></use></svg><span class=\"filename\">17391246723344959529301152516720</span><span class=\"informations\">1920×1440 174 KB</span><svg class=\"fa d-icon d-icon-discourse-expand svg-icon\" aria-hidden=\"true\"><use href=\"#discourse-expand\"></use></svg></div></a></div></p>",
+      "cleaned_text": "Sir I am having trouble in q8 also whenever I am pushing commit in git hub it was showing in GitHub repository but it is not working in git hub actions. 173912467233449595293011525167201920×1440 174 KB",
+      "reply_count": 1,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 8,
+      "username": "Sakshi6479",
+      "created_at": "2025-02-09T18:12:58.595Z",
+      "updated_at": "2025-02-09T18:12:58.595Z",
+      "raw_content": "",
+      "cooked_content": "<p><div class=\"lightbox-wrapper\"><a class=\"lightbox\" href=\"https://europe1.discourse-cdn.com/flex013/uploads/iitm/original/3X/0/d/0d4f66d2d15a90c43877612db24b4fc030d6b439.jpeg\" data-download-href=\"/uploads/short-url/1TKk6TNFho6k20gVctIkN9Cdl3j.jpeg?dl=1\" title=\"17391247584894314599446477469566\" rel=\"noopener nofollow ugc\"><img src=\"https://europe1.discourse-cdn.com/flex013/uploads/iitm/optimized/3X/0/d/0d4f66d2d15a90c43877612db24b4fc030d6b439_2_666x500.jpeg\" alt=\"17391247584894314599446477469566\" data-base62-sha1=\"1TKk6TNFho6k20gVctIkN9Cdl3j\" width=\"666\" height=\"500\" srcset=\"https://europe1.discourse-cdn.com/flex013/uploads/iitm/optimized/3X/0/d/0d4f66d2d15a90c43877612db24b4fc030d6b439_2_666x500.jpeg, https://europe1.discourse-cdn.com/flex013/uploads/iitm/optimized/3X/0/d/0d4f66d2d15a90c43877612db24b4fc030d6b439_2_999x750.jpeg 1.5x, https://europe1.discourse-cdn.com/flex013/uploads/iitm/optimized/3X/0/d/0d4f66d2d15a90c43877612db24b4fc030d6b439_2_1332x1000.jpeg 2x\" data-dominant-color=\"636361\"><div class=\"meta\"><svg class=\"fa d-icon d-icon-far-image svg-icon\" aria-hidden=\"true\"><use href=\"#far-image\"></use></svg><span class=\"filename\">17391247584894314599446477469566</span><span class=\"informations\">1920×1440 170 KB</span><svg class=\"fa d-icon d-icon-discourse-expand svg-icon\" aria-hidden=\"true\"><use href=\"#discourse-expand\"></use></svg></div></a></div><br>\nIt is working in repo</p>",
+      "cleaned_text": "173912475848943145994464774695661920×1440 170 KB It is working in repo",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 1
+    }
+  ],
+  "scraped_at": "2025-06-14T13:09:28.674436",
+  "total_posts_scraped": 8
+}

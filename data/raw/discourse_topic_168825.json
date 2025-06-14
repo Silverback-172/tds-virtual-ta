@@ -1,0 +1,53 @@
+{
+  "id": 168825,
+  "title": "Not recieved the roe link mail",
+  "slug": "not-recieved-the-roe-link-mail",
+  "created_at": "2025-03-01T07:37:08.740Z",
+  "last_posted_at": "2025-03-02T06:03:08.910Z",
+  "posts_count": 3,
+  "reply_count": 0,
+  "like_count": 0,
+  "views": 84,
+  "category_id": 34,
+  "url": "https://discourse.onlinedegree.iitm.ac.in/t/168825",
+  "posts": [
+    {
+      "post_number": 1,
+      "username": "23f2003535",
+      "created_at": "2025-03-01T07:37:08.926Z",
+      "updated_at": "2025-03-01T10:28:42.481Z",
+      "raw_content": "",
+      "cooked_content": "<p>Hello sir, I did not recieve the mail for roe exam Pls look into it.</p>",
+      "cleaned_text": "Hello sir, I did not recieve the mail for roe exam Pls look into it.",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 0
+    },
+    {
+      "post_number": 2,
+      "username": "Jivraj",
+      "created_at": "2025-03-01T10:28:22.396Z",
+      "updated_at": "2025-03-01T10:28:22.396Z",
+      "raw_content": "",
+      "cooked_content": "<p>Hi <a class=\"mention\" href=\"/u/23f2003535\">@23f2003535</a></p>\n<p>Mail was sent 1hour ago, you would have received now.</p>",
+      "cleaned_text": "Hi @23f2003535 Mail was sent 1hour ago, you would have received now.",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 2
+    },
+    {
+      "post_number": 5,
+      "username": "21f3001303",
+      "created_at": "2025-03-02T06:03:08.910Z",
+      "updated_at": "2025-03-02T06:03:08.910Z",
+      "raw_content": "",
+      "cooked_content": "<p>sir we have to join the google meet for roe also?? Or its an open book exam?</p>",
+      "cleaned_text": "sir we have to join the google meet for roe also?? Or its an open book exam?",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 0
+    }
+  ],
+  "scraped_at": "2025-06-14T13:08:08.616842",
+  "total_posts_scraped": 3
+}

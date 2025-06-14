@@ -1,0 +1,65 @@
+{
+  "id": 168537,
+  "title": "ROE timing overlaps with Java OPPE",
+  "slug": "roe-timing-overlaps-with-java-oppe",
+  "created_at": "2025-02-26T11:45:53.125Z",
+  "last_posted_at": "2025-03-03T07:27:48.677Z",
+  "posts_count": 4,
+  "reply_count": 1,
+  "like_count": 2,
+  "views": 119,
+  "category_id": 34,
+  "url": "https://discourse.onlinedegree.iitm.ac.in/t/168537",
+  "posts": [
+    {
+      "post_number": 1,
+      "username": "Nelson",
+      "created_at": "2025-02-26T11:45:53.368Z",
+      "updated_at": "2025-02-26T14:07:57.104Z",
+      "raw_content": "",
+      "cooked_content": "<p>On 2nd March, I have both Java OPPE and TDS ROE.<br>\nMy Java OPPE timing is: 9:30 to 11:00 AM<br>\nMY TDS ROE timing is: 10:30 to 11:15 AM</p>\n<p>A minimum gap of one hour is recommended.</p>\n<p>I have written to support.</p>\n<p><a class=\"mention\" href=\"/u/carlton\">@carlton</a> Please look into this.</p>",
+      "cleaned_text": "On 2nd March, I have both Java OPPE and TDS ROE. My Java OPPE timing is: 9:30 to 11:00 AM MY TDS ROE timing is: 10:30 to 11:15 AM A minimum gap of one hour is recommended. I have written to support. @carlton Please look into this.",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 2,
+      "username": "23f2004752",
+      "created_at": "2025-02-26T13:09:32.246Z",
+      "updated_at": "2025-02-26T13:09:32.246Z",
+      "raw_content": "",
+      "cooked_content": "<p>I guess roe time is 13:00 to 13:45 and it is same for all , also check calender for the same.</p>",
+      "cleaned_text": "I guess roe time is 13:00 to 13:45 and it is same for all , also check calender for the same.",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 3,
+      "username": "carlton",
+      "created_at": "2025-02-26T13:27:47.811Z",
+      "updated_at": "2025-02-26T13:27:47.811Z",
+      "raw_content": "",
+      "cooked_content": "<p><a class=\"mention\" href=\"/u/nelson\">@Nelson</a><br>\nTDS ROE is at 1pm in the afternoon for everyone.</p>",
+      "cleaned_text": "@Nelson TDS ROE is at 1pm in the afternoon for everyone.",
+      "reply_count": 1,
+      "like_count": 2,
+      "trust_level": 3
+    },
+    {
+      "post_number": 5,
+      "username": "Nelson",
+      "created_at": "2025-03-03T07:27:48.677Z",
+      "updated_at": "2025-03-03T07:27:48.677Z",
+      "raw_content": "",
+      "cooked_content": "<p>Apologies for the confusion. I realized that the issue was due to different time zones—Java OPPE displayed IST (GMT +5:30), while TDS ROE showed AST (GMT +3). On the same day, I intended to delete my post on Discourse but couldn’t find it, as it was still in draft mode. So, I deleted it. However, I was surprised to see the post today.</p>\n<p>I regret any inconvenience caused.</p>",
+      "cleaned_text": "Apologies for the confusion. I realized that the issue was due to different time zones—Java OPPE displayed IST (GMT +5:30), while TDS ROE showed AST (GMT +3). On the same day, I intended to delete my post on Discourse but couldn’t find it, as it was still in draft mode. So, I deleted it. However, I was surprised to see the post today. I regret any inconvenience caused.",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 1
+    }
+  ],
+  "scraped_at": "2025-06-14T13:00:06.384624",
+  "total_posts_scraped": 4
+}

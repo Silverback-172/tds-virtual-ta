@@ -1,0 +1,41 @@
+{
+  "id": 165416,
+  "title": "Where can i find the TDS GA1 after the submission date has passed?",
+  "slug": "where-can-i-find-the-tds-ga1-after-the-submission-date-has-passed",
+  "created_at": "2025-01-27T05:03:26.563Z",
+  "last_posted_at": "2025-02-07T12:27:11.389Z",
+  "posts_count": 2,
+  "reply_count": 0,
+  "like_count": 0,
+  "views": 65,
+  "category_id": 34,
+  "url": "https://discourse.onlinedegree.iitm.ac.in/t/165416",
+  "posts": [
+    {
+      "post_number": 1,
+      "username": "cshetty",
+      "created_at": "2025-01-27T05:03:26.651Z",
+      "updated_at": "2025-02-07T12:26:59.093Z",
+      "raw_content": "",
+      "cooked_content": "<p>I cannot find the questions of GA1 since the submission date has passed, can you help me</p>",
+      "cleaned_text": "I cannot find the questions of GA1 since the submission date has passed, can you help me",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 3,
+      "username": "shriaviator",
+      "created_at": "2025-02-07T12:27:11.389Z",
+      "updated_at": "2025-02-07T12:27:11.389Z",
+      "raw_content": "",
+      "cooked_content": "<p><a class=\"mention\" href=\"/u/cshetty\">@cshetty</a><br>\nTopic moved to the appropriate category in order to get faster responses.</p>\n<p><strong>Please make it easier for others to help you, by ensuring that topics are created in the correct categories.</strong></p>",
+      "cleaned_text": "@cshetty Topic moved to the appropriate category in order to get faster responses. Please make it easier for others to help you, by ensuring that topics are created in the correct categories.",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 2
+    }
+  ],
+  "scraped_at": "2025-06-14T13:09:33.599046",
+  "total_posts_scraped": 2
+}

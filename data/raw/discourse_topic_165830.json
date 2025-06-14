@@ -1,0 +1,29 @@
+{
+  "id": 165830,
+  "title": "Live Session Agenda - 30/01/2025",
+  "slug": "live-session-agenda-30-01-2025",
+  "created_at": "2025-01-30T09:31:29.488Z",
+  "last_posted_at": "2025-01-30T09:31:29.813Z",
+  "posts_count": 1,
+  "reply_count": 0,
+  "like_count": 0,
+  "views": 46,
+  "category_id": 34,
+  "url": "https://discourse.onlinedegree.iitm.ac.in/t/165830",
+  "posts": [
+    {
+      "post_number": 1,
+      "username": "carlton",
+      "created_at": "2025-01-30T09:31:29.813Z",
+      "updated_at": "2025-01-30T10:41:02.315Z",
+      "raw_content": "",
+      "cooked_content": "<p>Hi All,</p>\n<p>The agenda items for the live session 30/01/2025 are:</p>\n<ol>\n<li>What is Rest API?</li>\n<li>The FAST API library</li>\n<li>Basic Intro to CORS</li>\n<li>Creating JSON schema</li>\n<li>Function calling</li>\n</ol>\n<p>GMeet: <img src=\"https://ssl.gstatic.com/calendar/images/conferenceproviders/logo_meet_2020q4_192px.svg\" alt=\"\" role=\"presentation\" width=\"192\" height=\"192\"></p>\n<p>Join with Google Meet</p>\n<p><a href=\"http://meet.google.com/brz-ksac-evo\" class=\"onebox\" target=\"_blank\" rel=\"noopener nofollow ugc\">meet.google.com/brz-ksac-evo</a></p>\n<p>Kind regards,<br>\nTDS Team</p>",
+      "cleaned_text": "Hi All, The agenda items for the live session 30/01/2025 are: What is Rest API? The FAST API library Basic Intro to CORS Creating JSON schema Function calling GMeet: Join with Google Meet meet.google.com/brz-ksac-evo Kind regards, TDS Team",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 3
+    }
+  ],
+  "scraped_at": "2025-06-14T13:09:58.435263",
+  "total_posts_scraped": 1
+}

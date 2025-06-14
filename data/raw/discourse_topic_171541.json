@@ -1,0 +1,77 @@
+{
+  "id": 171541,
+  "title": "Peer review clarificaiton",
+  "slug": "peer-review-clarificaiton",
+  "created_at": "2025-04-01T17:58:36.436Z",
+  "last_posted_at": "2025-04-04T05:37:33.980Z",
+  "posts_count": 5,
+  "reply_count": 0,
+  "like_count": 0,
+  "views": 105,
+  "category_id": 34,
+  "url": "https://discourse.onlinedegree.iitm.ac.in/t/171541",
+  "posts": [
+    {
+      "post_number": 1,
+      "username": "AbhinavOhri",
+      "created_at": "2025-04-01T17:58:36.806Z",
+      "updated_at": "2025-04-01T17:58:36.806Z",
+      "raw_content": "",
+      "cooked_content": "<p>I am unable to open the files shared by the students I am peer reviewing as I don’t have access to them on my student email. Since we were asked to give access to se2002@study.iitm.ac.in when submitting, I wanted to check how this will work—will the team provide us access, or do we need to request it from the student and wait for them to grant it?\"</p>\n<p><a class=\"mention\" href=\"/u/carlton\">@carlton</a></p>",
+      "cleaned_text": "I am unable to open the files shared by the students I am peer reviewing as I don’t have access to them on my student email. Since we were asked to give access to se2002@study.iitm.ac.in when submitting, I wanted to check how this will work—will the team provide us access, or do we need to request it from the student and wait for them to grant it?\" @carlton",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 2,
+      "username": "parthivn28",
+      "created_at": "2025-04-02T02:36:54.332Z",
+      "updated_at": "2025-04-02T02:36:54.332Z",
+      "raw_content": "",
+      "cooked_content": "<p>If u dont have access to the google sheet of ur peer while trying reviewing , it means u can just give them 0 and leave (mentioned in the mail they sent )</p>",
+      "cleaned_text": "If u dont have access to the google sheet of ur peer while trying reviewing , it means u can just give them 0 and leave (mentioned in the mail they sent )",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 3,
+      "username": "carlton",
+      "created_at": "2025-04-02T15:07:10.404Z",
+      "updated_at": "2025-04-02T15:07:10.404Z",
+      "raw_content": "",
+      "cooked_content": "<p>Request access from the peer.</p>\n<p>Also dont forget to give view permissions to your submissions.</p>\n<p>Kind regards</p>",
+      "cleaned_text": "Request access from the peer. Also dont forget to give view permissions to your submissions. Kind regards",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 3
+    },
+    {
+      "post_number": 4,
+      "username": "_Riddhi",
+      "created_at": "2025-04-03T15:32:52.948Z",
+      "updated_at": "2025-04-03T15:32:52.948Z",
+      "raw_content": "",
+      "cooked_content": "<p>I have completed my allotted 3 peer reviews, I was wondering if it’s possible to do more peer reviews for extra credit? I ask because all 3 of my allotted peer reviews were empty submissions and I don’t feel like I actually did any work <img src=\"https://emoji.discourse-cdn.com/google/sweat_smile.png?v=14\" title=\":sweat_smile:\" class=\"emoji\" alt=\":sweat_smile:\" loading=\"lazy\" width=\"20\" height=\"20\"></p>",
+      "cleaned_text": "I have completed my allotted 3 peer reviews, I was wondering if it’s possible to do more peer reviews for extra credit? I ask because all 3 of my allotted peer reviews were empty submissions and I don’t feel like I actually did any work",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 1
+    },
+    {
+      "post_number": 5,
+      "username": "22f3001832",
+      "created_at": "2025-04-04T05:37:33.980Z",
+      "updated_at": "2025-04-04T05:37:33.980Z",
+      "raw_content": "",
+      "cooked_content": "<p>Where  can I do  peer review, I do not get mail regarding that?</p>",
+      "cleaned_text": "Where can I do peer review, I do not get mail regarding that?",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 1
+    }
+  ],
+  "scraped_at": "2025-06-14T12:59:12.145667",
+  "total_posts_scraped": 5
+}
