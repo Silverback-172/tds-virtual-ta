@@ -1,0 +1,29 @@
+{
+  "id": 166738,
+  "title": "Project structure",
+  "slug": "project-structure",
+  "created_at": "2025-02-10T16:34:02.601Z",
+  "last_posted_at": "2025-02-10T16:34:02.826Z",
+  "posts_count": 1,
+  "reply_count": 0,
+  "like_count": 0,
+  "views": 77,
+  "category_id": 34,
+  "url": "https://discourse.onlinedegree.iitm.ac.in/t/166738",
+  "posts": [
+    {
+      "post_number": 1,
+      "username": "23F300327",
+      "created_at": "2025-02-10T16:34:02.826Z",
+      "updated_at": "2025-02-10T16:34:02.826Z",
+      "raw_content": "",
+      "cooked_content": "<p><a class=\"mention\" href=\"/u/s.anand\">@s.anand</a> <a class=\"mention\" href=\"/u/jivraj\">@Jivraj</a> <a class=\"mention\" href=\"/u/carlton\">@carlton</a> can you please provide structure of the project as it is getting very confusing, it will be very helpful and create less confusion regarding the project.</p>",
+      "cleaned_text": "@s.anand @Jivraj @carlton can you please provide structure of the project as it is getting very confusing, it will be very helpful and create less confusion regarding the project.",
+      "reply_count": 0,
+      "like_count": 0,
+      "trust_level": 1
+    }
+  ],
+  "scraped_at": "2025-06-14T13:09:23.816173",
+  "total_posts_scraped": 1
+}

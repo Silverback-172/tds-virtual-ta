@@ -1,0 +1,65 @@
+{
+  "id": 163381,
+  "title": "Need friends",
+  "slug": "need-friends",
+  "created_at": "2025-01-15T21:17:57.491Z",
+  "last_posted_at": "2025-01-16T11:54:45.763Z",
+  "posts_count": 4,
+  "reply_count": 0,
+  "like_count": 6,
+  "views": 131,
+  "category_id": 34,
+  "url": "https://discourse.onlinedegree.iitm.ac.in/t/163381",
+  "posts": [
+    {
+      "post_number": 1,
+      "username": "RishabhSehgal",
+      "created_at": "2025-01-15T21:17:57.705Z",
+      "updated_at": "2025-01-15T21:17:57.705Z",
+      "raw_content": "",
+      "cooked_content": "<p>I am an international student with none of my peers here in this course. It would be amazing to work with other people taking this course this term and doing the assignments together.</p>\n<p>a few brains are better than one brain</p>",
+      "cleaned_text": "I am an international student with none of my peers here in this course. It would be amazing to work with other people taking this course this term and doing the assignments together. a few brains are better than one brain",
+      "reply_count": 0,
+      "like_count": 2,
+      "trust_level": 0
+    },
+    {
+      "post_number": 2,
+      "username": "23f2000237",
+      "created_at": "2025-01-16T06:51:34.998Z",
+      "updated_at": "2025-01-16T06:51:34.998Z",
+      "raw_content": "",
+      "cooked_content": "<p>Yes indeed. We must connect to solve these assignments and prepare for ROE from now</p>",
+      "cleaned_text": "Yes indeed. We must connect to solve these assignments and prepare for ROE from now",
+      "reply_count": 0,
+      "like_count": 2,
+      "trust_level": 1
+    },
+    {
+      "post_number": 3,
+      "username": "ADI_1792",
+      "created_at": "2025-01-16T07:11:21.868Z",
+      "updated_at": "2025-01-16T07:11:21.868Z",
+      "raw_content": "",
+      "cooked_content": "<p>you can use <a href=\"https://acegrade.in\" rel=\"noopener nofollow ugc\">https://acegrade.in</a> to find community of people with same subjects as you . Just use the ‘Groups’ tab of the website and you will prolly find lot’s of friends there .</p>",
+      "cleaned_text": "you can use https://acegrade.in to find community of people with same subjects as you . Just use the ‘Groups’ tab of the website and you will prolly find lot’s of friends there .",
+      "reply_count": 0,
+      "like_count": 1,
+      "trust_level": 1
+    },
+    {
+      "post_number": 4,
+      "username": "23f2005121",
+      "created_at": "2025-01-16T11:54:45.763Z",
+      "updated_at": "2025-01-16T11:54:45.763Z",
+      "raw_content": "",
+      "cooked_content": "<p>Hey, I am Azhaan, the regional coordinator of Bandipur International. DM me on WhatsApp and I will connect you with the International Community of IITM BS. I am sending you a chat.</p>",
+      "cleaned_text": "Hey, I am Azhaan, the regional coordinator of Bandipur International. DM me on WhatsApp and I will connect you with the International Community of IITM BS. I am sending you a chat.",
+      "reply_count": 0,
+      "like_count": 1,
+      "trust_level": 1
+    }
+  ],
+  "scraped_at": "2025-06-14T13:10:32.460909",
+  "total_posts_scraped": 4
+}
