@@ -1,32 +1,34 @@
 import os
+from pathlib import Path
 from dotenv import load_dotenv
 
+# Load environment variables
 load_dotenv()
 
 class Settings:
+    # Base paths
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    RAW_DATA_PATH = BASE_DIR / "data" / "raw"
+    PROCESSED_DATA_PATH = BASE_DIR / "data" / "processed"
+    
     # API Configuration
-    API_HOST = "0.0.0.0"
-    API_PORT = 8000
+    API_HOST = os.getenv("API_HOST", "0.0.0.0")
+    API_PORT = int(os.getenv("API_PORT", 8000))
     
-    # AIPipe Configuration (instead of direct OpenAI)
-    AIPIPE_TOKEN = os.getenv("AIPIPE_TOKEN", "")
-    OPENAI_BASE_URL = "https://aipipe.org/openrouter/v1"  # For chat completions
-    OPENAI_EMBEDDING_URL = "https://aipipe.org/openai/v1"  # For embeddings
+    # Gemini Configuration (Primary - Free for testing)
+    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "your_gemini_api_key_here")
     
-    # Model Configuration
-    CHAT_MODEL = "google/gemini-2.0-flash-lite-001"  # Cost-effective via OpenRouter
-    EMBEDDING_MODEL = "text-embedding-3-small"  # Via OpenAI endpoint
+    # Model Configuration (Gemini models from session)
+    EMBEDDING_MODEL = "models/embedding-001"  # Gemini embedding model
+    CHAT_MODEL = "gemini-2.0-flash"  # Gemini chat model (15 requests/min free)
     
-    # Scraping Configuration
-    DISCOURSE_BASE_URL = "https://discourse.onlinedegree.iitm.ac.in"
-    TDS_COURSE_URL = "https://tds.s-anand.net"
-    
-    # Data paths
-    RAW_DATA_PATH = "data/raw"
-    PROCESSED_DATA_PATH = "data/processed"
-    
-    # Rate limiting
-    REQUEST_DELAY = 1  # seconds between requests
-    MAX_RETRIES = 3
+    # Vector Storage Configuration
+    EMBEDDINGS_FILE = PROCESSED_DATA_PATH / "comprehensive_embeddings.npz"
+    MAX_EMBEDDINGS_SIZE_MB = 15
 
+# Create settings instance
 settings = Settings()
+
+# Create directories if they don't exist
+settings.RAW_DATA_PATH.mkdir(parents=True, exist_ok=True)
+settings.PROCESSED_DATA_PATH.mkdir(parents=True, exist_ok=True)
