@@ -28,6 +28,11 @@ app = FastAPI(
     description="A Virtual Teaching Assistant for Tools in Data Science course",
     version="1.0.0"
 )
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"message": "Hello from FastAPI on Vercel!"}
 
 # Add CORS middleware
 app.add_middleware(
