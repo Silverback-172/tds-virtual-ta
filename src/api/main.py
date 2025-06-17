@@ -14,10 +14,6 @@ from typing import Optional, List, Dict, Any
 
 from config.settings import settings
 
-# Allow importing from project root
-project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-sys.path.insert(0, project_root)
-
 # Optional import for enhanced vector search
 try:
     from src.models.vector_store_complete import ComprehensiveVectorStore
@@ -60,13 +56,12 @@ embeddings = []
 async def load_knowledge_base():
     global knowledge_base, chunks, embeddings
     try:
-        # Use working directory (should be project root on Vercel)
-        base_dir = os.getcwd()
-        data_path = os.path.join(base_dir, "data", "raw", "tds_course_all.json")
-        embeddings_path = os.path.join(base_dir, "data", "processed", "comprehensive_embeddings.npz")
+        # Use relative paths from project root (Render's working directory)
+        data_path = "data/raw/tds_course_all.json"
+        embeddings_path = "data/processed/comprehensive_embeddings.npz"
 
-        print(f"Trying data_path: {data_path}")
-        print(f"Trying embeddings_path: {embeddings_path}")
+        print(f"Trying data_path: {os.path.abspath(data_path)}")
+        print(f"Trying embeddings_path: {os.path.abspath(embeddings_path)}")
 
         if os.path.exists(data_path):
             with open(data_path, 'r', encoding='utf-8') as f:
@@ -101,7 +96,7 @@ def get_embeddings(text):
             return np.array(result['embedding'])
     except Exception as e:
         print(f"Gemini embedding failed: {e}")
-    
+
     # Fallback: deterministic hash embedding
     text_hash = hashlib.sha256(text.encode()).hexdigest()
     embedding = np.array([int(text_hash[i:i+2], 16) / 255.0 for i in range(0, min(768, len(text_hash)), 2)])
@@ -115,20 +110,20 @@ def get_image_description(image_data):
             from PIL import Image
 
             genai.configure(api_key=settings.GEMINI_API_KEY)
-            
+
             # Decode base64 image
             image_bytes = base64.b64decode(image_data)
             image = Image.open(io.BytesIO(image_bytes))
-            
+
             # Use Gemini 2.0 Flash for image processing
             model = genai.GenerativeModel('gemini-2.0-flash')
-            
+
             prompt = """
             Analyze this image in the context of Tools in Data Science (TDS) course.
             Describe what you see and how it relates to data science concepts, programming, 
             or course materials. Be specific and educational.
             """
-            
+
             response = model.generate_content([prompt, image])
             return response.text
     except Exception as e:
@@ -140,10 +135,10 @@ def search_knowledge_base(query, top_k=5):
     try:
         if len(embeddings) == 0:
             return []
-        
+
         # Get query embedding
         query_embedding = get_embeddings(query)
-        
+
         # Calculate similarities
         similarities = []
         for i, chunk_embedding in enumerate(embeddings):
@@ -152,11 +147,11 @@ def search_knowledge_base(query, top_k=5):
                 np.linalg.norm(query_embedding) * np.linalg.norm(chunk_embedding)
             )
             similarities.append((similarity, i))
-        
+
         # Sort by similarity and get top results
         similarities.sort(reverse=True)
         top_results = similarities[:top_k]
-        
+
         results = []
         for similarity, idx in top_results:
             if idx < len(chunks):
@@ -165,7 +160,7 @@ def search_knowledge_base(query, top_k=5):
                     'similarity': float(similarity),
                     'index': idx
                 })
-        
+
         return results
     except Exception as e:
         print(f"Search failed: {e}")
@@ -176,33 +171,33 @@ def generate_response(question, context_results, image_description=None):
     try:
         if getattr(settings, 'GEMINI_API_KEY', '') and settings.GEMINI_API_KEY != "your_gemini_api_key_here":
             import google.generativeai as genai
-            
+
             genai.configure(api_key=settings.GEMINI_API_KEY)
             model = genai.GenerativeModel('gemini-2.0-flash')
-            
+
             # Prepare context
             context_text = "\n\n".join([result['content'] for result in context_results[:3]])
-            
+
             prompt = f"""
             You are a Virtual Teaching Assistant for the Tools in Data Science (TDS) course.
-            
+
             Question: {question}
-            
+
             {f"Image Description: {image_description}" if image_description else ""}
-            
+
             Context from course materials:
             {context_text}
-            
+
             Please provide a helpful, accurate answer based on the course materials. 
             Be specific and educational. If the question is about course logistics, 
             assignments, or technical concepts, provide detailed guidance.
             """
-            
+
             response = model.generate_content(prompt)
             return response.text
     except Exception as e:
         print(f"Response generation failed: {e}")
-    
+
     # Fallback response
     if context_results:
         return f"Based on the course materials, here's what I found relevant to your question: {context_results[0]['content'][:500]}..."
@@ -226,7 +221,7 @@ async def ask_question(request: QuestionRequest) -> TAResponse:
         question = request.question
         image_data = request.image
         context = request.context
-        
+
         # Process image if provided
         image_description = None
         if image_data:
@@ -235,13 +230,13 @@ async def ask_question(request: QuestionRequest) -> TAResponse:
             search_query = f"{question} {image_description}"
         else:
             search_query = question
-        
+
         # Search knowledge base
         context_results = search_knowledge_base(search_query, top_k=5)
-        
+
         # Generate response
         answer = generate_response(question, context_results, image_description)
-        
+
         # Prepare links
         links = [
             {
@@ -253,9 +248,9 @@ async def ask_question(request: QuestionRequest) -> TAResponse:
                 "text": "TDS Discourse"
             }
         ]
-        
+
         return TAResponse(answer=answer, links=links)
-        
+
     except Exception as e:
         print(f"Error processing question: {e}")
         raise HTTPException(status_code=500, detail="Internal server error")
