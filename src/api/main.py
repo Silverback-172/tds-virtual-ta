@@ -60,17 +60,20 @@ embeddings = []
 async def load_knowledge_base():
     global knowledge_base, chunks, embeddings
     try:
-        # Use absolute paths for data files
-        BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-        data_path = os.path.join(BASE_DIR, "data", "raw", "tds_course_all.json")
-        embeddings_path = os.path.join(BASE_DIR, "data", "processed", "comprehensive_embeddings.npz")
+        # Use working directory (should be project root on Vercel)
+        base_dir = os.getcwd()
+        data_path = os.path.join(base_dir, "data", "raw", "tds_course_all.json")
+        embeddings_path = os.path.join(base_dir, "data", "processed", "comprehensive_embeddings.npz")
+
+        print(f"Trying data_path: {data_path}")
+        print(f"Trying embeddings_path: {embeddings_path}")
 
         if os.path.exists(data_path):
             with open(data_path, 'r', encoding='utf-8') as f:
                 knowledge_base = json.load(f)
             print(f"Loaded {len(knowledge_base)} sections from knowledge base")
         else:
-            print("Knowledge base file not found.")
+            print("Knowledge base file not found at", data_path)
             knowledge_base = {}
 
         if os.path.exists(embeddings_path):
@@ -79,7 +82,7 @@ async def load_knowledge_base():
             embeddings = data['embeddings']
             print(f"Loaded {len(chunks)} chunks and embeddings")
         else:
-            print("No embeddings file found.")
+            print("No embeddings file found at", embeddings_path)
     except Exception as e:
         print(f"Failed to load knowledge base: {e}")
         knowledge_base = {}
