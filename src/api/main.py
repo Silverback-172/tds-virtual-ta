@@ -7,8 +7,10 @@ import io
 import numpy as np
 from datetime import datetime
 
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
+from typing import Optional, List, Dict, Any
 
 from config.settings import settings
 
@@ -39,6 +41,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Request/Response models
+class QuestionRequest(BaseModel):
+    question: str
+    image: Optional[str] = None
+    context: Optional[str] = "general"
+
+class TAResponse(BaseModel):
+    answer: str
+    links: List[Dict[str, str]]
+
 # Global state
 knowledge_base = {}
 chunks = []
@@ -48,7 +60,8 @@ embeddings = []
 async def load_knowledge_base():
     global knowledge_base, chunks, embeddings
     try:
-        data_path = os.path.join(settings.RAW_DATA_PATH, 'tds_course_all.json')
+        # Load course content
+        data_path = os.path.join("data", "raw", 'tds_course_all.json')
         if os.path.exists(data_path):
             with open(data_path, 'r', encoding='utf-8') as f:
                 knowledge_base = json.load(f)
@@ -77,6 +90,7 @@ async def load_knowledge_base():
         knowledge_base = {}
 
 def get_embeddings(text):
+    """Generate embeddings for text using Gemini or fallback to hash-based embedding"""
     try:
         if getattr(settings, 'GEMINI_API_KEY', '') and settings.GEMINI_API_KEY != "your_gemini_api_key_here":
             import google.generativeai as genai
@@ -96,145 +110,175 @@ def get_embeddings(text):
     return np.pad(embedding, (0, 384 - len(embedding)), 'constant')[:384]
 
 def get_image_description(image_data):
+    """Process image using Gemini 2.0 Flash model"""
     try:
         if getattr(settings, 'GEMINI_API_KEY', '') and settings.GEMINI_API_KEY != "your_gemini_api_key_here":
             import google.generativeai as genai
             from PIL import Image
 
             genai.configure(api_key=settings.GEMINI_API_KEY)
-            model = genai.GenerativeModel('gemini-2.0-flash')
-
+            
+            # Decode base64 image
             image_bytes = base64.b64decode(image_data)
             image = Image.open(io.BytesIO(image_bytes))
-
-            prompt = (
-                "Describe the content of this image in detail, focusing on any text, "
-                "objects, or technical content relevant to Tools in Data Science topics "
-                "like Docker, Git, Python, or data science. Be specific about error messages, "
-                "code snippets, or diagrams."
-            )
+            
+            # Use Gemini 2.0 Flash for image processing
+            model = genai.GenerativeModel('gemini-2.0-flash')
+            
+            prompt = """
+            Analyze this image in the context of Tools in Data Science (TDS) course.
+            Describe what you see and how it relates to data science concepts, programming, 
+            or course materials. Be specific and educational.
+            """
+            
             response = model.generate_content([prompt, image])
             return response.text
     except Exception as e:
         print(f"Image processing failed: {e}")
-    
-    return "Image was provided but could not be processed. It might contain relevant technical information."
+        return "Image processing failed. Please describe your question in text."
 
-def generate_llm_response(question, context):
+def search_knowledge_base(query, top_k=5):
+    """Search knowledge base using vector similarity"""
+    try:
+        if len(embeddings) == 0:
+            return []
+        
+        # Get query embedding
+        query_embedding = get_embeddings(query)
+        
+        # Calculate similarities
+        similarities = []
+        for i, chunk_embedding in enumerate(embeddings):
+            # Cosine similarity
+            similarity = np.dot(query_embedding, chunk_embedding) / (
+                np.linalg.norm(query_embedding) * np.linalg.norm(chunk_embedding)
+            )
+            similarities.append((similarity, i))
+        
+        # Sort by similarity and get top results
+        similarities.sort(reverse=True)
+        top_results = similarities[:top_k]
+        
+        results = []
+        for similarity, idx in top_results:
+            if idx < len(chunks):
+                results.append({
+                    'content': chunks[idx],
+                    'similarity': float(similarity),
+                    'index': idx
+                })
+        
+        return results
+    except Exception as e:
+        print(f"Search failed: {e}")
+        return []
+
+def generate_response(question, context_results, image_description=None):
+    """Generate response using Gemini or fallback to template"""
     try:
         if getattr(settings, 'GEMINI_API_KEY', '') and settings.GEMINI_API_KEY != "your_gemini_api_key_here":
             import google.generativeai as genai
+            
             genai.configure(api_key=settings.GEMINI_API_KEY)
             model = genai.GenerativeModel('gemini-2.0-flash')
-            prompt = (
-                f"You are a helpful TA for the Tools in Data Science course.\n\n"
-                f"Question: {question}\n\n"
-                f"Context: {context}\n\n"
-                f"Answer concisely and helpfully. Keep the response under 200 words."
-            )
+            
+            # Prepare context
+            context_text = "\n\n".join([result['content'] for result in context_results[:3]])
+            
+            prompt = f"""
+            You are a Virtual Teaching Assistant for the Tools in Data Science (TDS) course.
+            
+            Question: {question}
+            
+            {f"Image Description: {image_description}" if image_description else ""}
+            
+            Context from course materials:
+            {context_text}
+            
+            Please provide a helpful, accurate answer based on the course materials. 
+            Be specific and educational. If the question is about course logistics, 
+            assignments, or technical concepts, provide detailed guidance.
+            """
+            
             response = model.generate_content(prompt)
             return response.text
     except Exception as e:
-        print(f"LLM generation failed: {e}")
+        print(f"Response generation failed: {e}")
     
-    return f"Based on the course materials:\n\n{context[:500]}..."
+    # Fallback response
+    if context_results:
+        return f"Based on the course materials, here's what I found relevant to your question: {context_results[0]['content'][:500]}..."
+    else:
+        return "I understand your question about the TDS course. While I don't have specific information readily available, I recommend checking the course materials or asking on the discourse forum for detailed guidance."
 
 @app.get("/")
 async def root():
+    """Health check endpoint"""
     return {
-        "message": "TDS Virtual TA is running",
-        "version": "1.0.0",
+        "message": "TDS Virtual TA API is running!",
         "status": "healthy",
-        "sections": len(knowledge_base),
-        "chunks": len(chunks),
-        "timestamp": datetime.now().isoformat()
+        "knowledge_base_loaded": len(knowledge_base) > 0,
+        "embeddings_loaded": len(embeddings) > 0
     }
 
 @app.post("/ask")
-async def ask_question(request: Request):
+async def ask_question(request: QuestionRequest) -> TAResponse:
+    """Main endpoint for asking questions to the Virtual TA"""
     try:
-        data = await request.json()
-        question = data.get("question", "")
-        image = data.get("image")
-
-        if not question.strip():
-            return {"error": "Question cannot be empty."}
-
-        enhanced_question = question
-        if image:
-            description = get_image_description(image)
-            enhanced_question += f"\n\nImage context: {description}"
-
-        if chunks and embeddings:
-            result = search_with_vector_store(enhanced_question)
+        question = request.question
+        image_data = request.image
+        context = request.context
+        
+        # Process image if provided
+        image_description = None
+        if image_data:
+            image_description = get_image_description(image_data)
+            # Combine question with image description for better search
+            search_query = f"{question} {image_description}"
         else:
-            result = search_knowledge_base_basic(enhanced_question)
-
-        return {
-            "answer": result["answer"],
-            "links": result["links"]
-        }
+            search_query = question
+        
+        # Search knowledge base
+        context_results = search_knowledge_base(search_query, top_k=5)
+        
+        # Generate response
+        answer = generate_response(question, context_results, image_description)
+        
+        # Prepare links
+        links = [
+            {
+                "url": "https://tds.s-anand.net/#/2025-01/",
+                "text": "TDS Course Content"
+            },
+            {
+                "url": "https://discourse.onlinedegree.iitm.ac.in/c/courses/tds-kb/34",
+                "text": "TDS Discourse"
+            }
+        ]
+        
+        return TAResponse(answer=answer, links=links)
+        
     except Exception as e:
-        return {"error": str(e)}
+        print(f"Error processing question: {e}")
+        raise HTTPException(status_code=500, detail="Internal server error")
 
-def search_with_vector_store(question):
-    try:
-        question_embedding = get_embeddings(question)
-        similarities = np.dot(embeddings, question_embedding)
-        top_indices = np.argsort(similarities)[-10:][::-1]
-        top_chunks = [chunks[i] for i in top_indices[:3]]
-
-        context = "\n\n".join(top_chunks)
-        answer = generate_llm_response(question, context)
-
-        return {
-            "answer": answer,
-            "links": [
-                {"url": "https://tds.s-anand.net/#/2025-01/", "text": "TDS Course Content"},
-                {"url": "https://discourse.onlinedegree.iitm.ac.in/c/courses/tds-kb/34", "text": "TDS Discourse"}
-            ]
-        }
-    except Exception as e:
-        print(f"Vector search failed: {e}")
-        return search_knowledge_base_basic(question)
-
-def search_knowledge_base_basic(question):
-    question_lower = question.lower()
-    relevant = []
-
-    for name, data in knowledge_base.items():
-        content = data.get('content', '').lower()
-        score = sum(content.count(word) * (3 if word in ['docker', 'git', 'python'] else 1)
-                    for word in question_lower.split() if len(word) > 2)
-        if score > 0:
-            relevant.append({
-                "section": name,
-                "score": score,
-                "content": data.get('content', ''),
-                "url": data.get('url', '')
-            })
-
-    relevant.sort(key=lambda x: x['score'], reverse=True)
-    if not relevant:
-        return {
-            "answer": "No relevant information found in the TDS course materials.",
-            "links": []
-        }
-
-    top = relevant[0]
-    snippet = top['content'][:800] + "..." if len(top['content']) > 800 else top['content']
-
-    links = []
-    for sec in relevant[:3]:
-        sec_name = sec['section']
-        links.append({
-            "url": f"https://tds.s-anand.net/#/2025-01/{sec_name if sec_name != 'README' else ''}",
-            "text": f"Info from {sec_name} section"
-        })
-
+@app.get("/health")
+async def health_check():
+    """Detailed health check"""
     return {
-        "answer": f"Based on the course:\n\n{snippet}",
-        "links": links
+        "status": "healthy",
+        "timestamp": datetime.now().isoformat(),
+        "knowledge_base_sections": len(knowledge_base),
+        "total_chunks": len(chunks),
+        "embeddings_shape": embeddings.shape if len(embeddings) > 0 else "No embeddings",
+        "vector_store_available": VECTOR_STORE_AVAILABLE,
+        "gemini_configured": bool(getattr(settings, 'GEMINI_API_KEY', '') and settings.GEMINI_API_KEY != "your_gemini_api_key_here")
     }
 
-# Note: No __main__ block — Vercel uses its own ASGI handler
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(
+        app, 
+        host=getattr(settings, 'API_HOST', '0.0.0.0'), 
+        port=getattr(settings, 'API_PORT', 8000)
+    )
