@@ -3,7 +3,13 @@
   "builds": [
     {
       "src": "src/api/main.py",
-      "use": "@vercel/python"
+      "use": "@vercel/python",
+      "config": {
+        "includeFiles": [
+          "data/raw/tds_course_all.json",
+          "data/processed/comprehensive_embeddings.npz"
+        ]
+      }
     }
   ],
   "routes": [
