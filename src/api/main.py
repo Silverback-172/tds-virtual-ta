@@ -18,9 +18,6 @@ from config.settings import settings
 project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, project_root)
 
-# Set BASE_DIR to project root
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 # Optional import for enhanced vector search
 try:
     from src.models.vector_store_complete import ComprehensiveVectorStore
@@ -64,22 +61,18 @@ async def load_knowledge_base():
     global knowledge_base, chunks, embeddings
     try:
         # Use absolute paths for data files
-        data_path = os.path.join(BASE_DIR, "data", "raw", 'tds_course_all.json')
+        BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        data_path = os.path.join(BASE_DIR, "data", "raw", "tds_course_all.json")
+        embeddings_path = os.path.join(BASE_DIR, "data", "processed", "comprehensive_embeddings.npz")
+
         if os.path.exists(data_path):
             with open(data_path, 'r', encoding='utf-8') as f:
                 knowledge_base = json.load(f)
             print(f"Loaded {len(knowledge_base)} sections from knowledge base")
-
-            total_chars = sum(len(s.get('content', '')) for s in knowledge_base.values())
-            print(f"Total content: {total_chars} characters")
-
-            for name, data in knowledge_base.items():
-                print(f"{name}: {len(data.get('content', ''))} characters")
         else:
             print("Knowledge base file not found.")
             knowledge_base = {}
 
-        embeddings_path = os.path.join(BASE_DIR, "data", "processed", "comprehensive_embeddings.npz")
         if os.path.exists(embeddings_path):
             data = np.load(embeddings_path, allow_pickle=True)
             chunks = data['content'].tolist()
